@@ -5,42 +5,56 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - Mi aplicación ASP.NET</title>
-    @Styles.Render("~/Content/style.css")
+    @Styles.Render("~/Content/css/style.css")
     @Styles.Render("~/Content/Icoon/Fontsss/style.css")
 </head>
 <body>
-    <header class="arriba">
-    </header>
-    <header class="izquierda">
-        <nav class="izquierdanav">
-            <ul>
-                <li class="li-menu"><i class="icon-home3 icoon-size"></i>
-                                    <ul class="submenu">
-                                        <div class="return">
-                                            <div class="return-ico">
-                                                <i class="icon-circle-up icoon-size"></i>
-                                            </div>
-                                        </div>
+    <header class="arriba" id="headarriba">
+        <div class="arriba-grid">
+            <div class="grid-box">
 
-                                        <li>incio</li>
-                                    </ul>
+            </div>
+            <div class="grid-box">
+
+            </div>
+            <div class="grid-box">
+
+            </div>
+        </div>
+    </header>
+    <header class="izquierda" style="z-index:99" >
+        <nav class="izquierdanav" style="z-index:99">
+            <ul class="ul" style="z-index: 99">
+                <li class="li-menu"><i class="icon-home3 icoon-size"></i></li>
+                <li class="li-menu">
+                    <i class=" icon-cart icoon-size" id="openwindows"></i>
+                    <ul class="submenu cerrar" id="submenu" style="z-index:-10">
+                        <div class="return">
+                            <div class="return-ico" id="closewindow"><i class="icon-circle-up icoon-sizedos"></i></div>
+                        </div>
+                        <li class="li_submenu">Ventas <i class="icon-credit-card icoon-sizetres box"></i></li>
+                        <li class="li_submenu">Corte de caja <i class="icon-stats-bars icoon-sizetres box"></i></li>
+                        <li class="li_submenu">Devoluciones <i class="icon-loop icoon-sizetres box"></i></li>
+                        <li class="li_submenu">Garantia <i class="icon-fire icoon-sizetres box"></i></li></li>
+                    </ul>
                 </li>
-                <li class="li-menu"><i class=" icon-cart icoon-size"></i></li>
                 <li class="li-menu"><i class="icon-truck icoon-size"></i></li>
                 <li class="li-menu"><i class="icon-briefcase icoon-size"></i></li>
                 <li class="li-menu"><i class="icon-user-tie icoon-size"></i></li>
                 <li class="li-menu"><i class="icon-users icoon-size"></i></li>
 
                 @*<li>@Html.ActionLink("Home", "Index", "Home", null, new { @class = "letra" })</li>
-        <li>@Html.ActionLink("Proveedor", "Index", "Proveedor", null, new { @class = "letra" })</li>
-        <li>@Html.ActionLink("Ventas", "Index", "Ventas", null, new { @class = "letra" })</li>
-        <li>@Html.ActionLink("Compras", "Index", "Compras", null, new { @class = "letra" })</li>*@
+                <li>@Html.ActionLink("Proveedor", "Index", "Proveedor", null, new { @class = "letra" })</li>
+                <li>@Html.ActionLink("Ventas", "Index", "Ventas", null, new { @class = "letra" })</li>
+                <li>@Html.ActionLink("Compras", "Index", "Compras", null, new { @class = "letra" })</li>*@
             </ul>
         </nav>
+        
     </header>
     @RenderBody()
     <!-- <div class="container body-content">
 
     </div>-->
+    <script src="~/Content/js/main.js"></script>
 </body>
 </html>
