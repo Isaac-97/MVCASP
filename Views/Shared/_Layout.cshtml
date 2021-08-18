@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Mi aplicación ASP.NET</title>
+    @Styles.Render("~/Content/style.css")
+    @Styles.Render("~/Content/Icoon/Fontsss/style.css")
+</head>
+<body>
+    <header class="arriba">
+    </header>
+    <header class="izquierda">
+        <nav class="izquierdanav">
+            <ul>
+                <li class="li-menu"><i class="icon-home3 icoon-size"></i>
+                                    <ul class="submenu">
+                                        <div class="return">
+                                            <div class="return-ico">
+                                                <i class="icon-circle-up icoon-size"></i>
+                                            </div>
+                                        </div>
+
+                                        <li>incio</li>
+                                    </ul>
+                </li>
+                <li class="li-menu"><i class=" icon-cart icoon-size"></i></li>
+                <li class="li-menu"><i class="icon-truck icoon-size"></i></li>
+                <li class="li-menu"><i class="icon-briefcase icoon-size"></i></li>
+                <li class="li-menu"><i class="icon-user-tie icoon-size"></i></li>
+                <li class="li-menu"><i class="icon-users icoon-size"></i></li>
+
+                @*<li>@Html.ActionLink("Home", "Index", "Home", null, new { @class = "letra" })</li>
+        <li>@Html.ActionLink("Proveedor", "Index", "Proveedor", null, new { @class = "letra" })</li>
+        <li>@Html.ActionLink("Ventas", "Index", "Ventas", null, new { @class = "letra" })</li>
+        <li>@Html.ActionLink("Compras", "Index", "Compras", null, new { @class = "letra" })</li>*@
+            </ul>
+        </nav>
+    </header>
+    @RenderBody()
+    <!-- <div class="container body-content">
+
+    </div>-->
+</body>
+</html>
