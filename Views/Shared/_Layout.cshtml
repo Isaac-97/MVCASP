@@ -8,7 +8,7 @@
     @Styles.Render("~/Content/css/style.css")
     @Styles.Render("~/Content/Icoon/Fontsss/style.css")
 </head>
-<body>
+<body id="body">
     <header class="arriba" id="headarriba">
         <div class="arriba-grid">
             <div class="grid-box">
@@ -25,29 +25,112 @@
     <header class="izquierda" style="z-index:99" >
         <nav class="izquierdanav" style="z-index:99">
             <ul class="ul" style="z-index: 99">
-                <li class="li-menu"><i class="icon-home3 icoon-size"></i></li>
-                <li class="li-menu">
-                    <i class=" icon-cart icoon-size" id="openwindows"></i>
-                    <ul class="submenu cerrar" id="submenu" style="z-index:-10">
-                        <div class="return">
-                            <div class="return-ico" id="closewindow"><i class="icon-circle-up icoon-sizedos"></i></div>
-                        </div>
-                        <li class="li_submenu">Ventas <i class="icon-credit-card icoon-sizetres box"></i></li>
-                        <li class="li_submenu">Corte de caja <i class="icon-stats-bars icoon-sizetres box"></i></li>
-                        <li class="li_submenu">Devoluciones <i class="icon-loop icoon-sizetres box"></i></li>
-                        <li class="li_submenu">Garantia <i class="icon-fire icoon-sizetres box"></i></li></li>
-                    </ul>
-                </li>
-                <li class="li-menu"><i class="icon-truck icoon-size"></i></li>
-                <li class="li-menu"><i class="icon-briefcase icoon-size"></i></li>
-                <li class="li-menu"><i class="icon-user-tie icoon-size"></i></li>
-                <li class="li-menu"><i class="icon-users icoon-size"></i></li>
 
-                @*<li>@Html.ActionLink("Home", "Index", "Home", null, new { @class = "letra" })</li>
-                <li>@Html.ActionLink("Proveedor", "Index", "Proveedor", null, new { @class = "letra" })</li>
-                <li>@Html.ActionLink("Ventas", "Index", "Ventas", null, new { @class = "letra" })</li>
-                <li>@Html.ActionLink("Compras", "Index", "Compras", null, new { @class = "letra" })</li>*@
+            <!--Home-->
+                <li class="li-menu" id="animationhover">
+                    <i class="icon-home3 icoon-size" id="homewindow"></i>
+                        @Html.ActionLink(" ", "Index", "Home", null, new { @class = "nonele" }) 
+                        <span class="liunohover" id="liunohover">Inicio</span>
+                    </li> 
+                    
+            <!--Fin Home-->
+               
+               
+                <!--Ventas-->
+                <li class="li-menu" id="animationhoverdos">
+                    <i class=" icon-cart icoon-size" id="openwindows"></i>
+                    <span class="liunohoverdos" id="liunohoverdos">Ventas</span>
+                </li>
+
+                <ul class="submenu cerrar" id="submenu" style="z-index:-10">
+                    <div class="return">
+                        <div class="return-ico" id="closewindow"><i class="icon-circle-up icoon-sizedos"></i></div>
+                    </div>
+                    <li class="li_submenu">Ventas <i class="icon-credit-card icoon-sizetres box"></i></li>
+                    <li class="li_submenu">Corte de caja <i class="icon-stats-bars icoon-sizetres box"></i></li>
+                    <li class="li_submenu">Devoluciones <i class="icon-loop icoon-sizetres box"></i></li>
+                    <li class="li_submenu">Garantia <i class="icon-fire icoon-sizetres box"></i></li>
+                </ul>
+                <!--termina ventas-->
+
+
+
+
+
+
+                <!--Inventario-->
+                <li class="li-menu" id="animationhovertres">
+                    <i class="icon-truck icoon-size" id="openwindowsdos"></i>
+                    <span class="liunohovertres" id="liunohovertres">Inventario</span>
+                </li>
+
+
+                <ul class="submenudos cerrar" id="submenudos" style="z-index:-10">
+                    <div class="return">
+                        <div class="return-ico" id="closewindowdos"><i class="icon-circle-up icoon-sizedos"></i></div>
+                    </div>
+                    <li class="li_submenu">Producto<i class="icon-credit-card icoon-sizetres box"></i></li>
+                    <li class="li_submenu">Marcas <i class="icon-stats-bars icoon-sizetres box"></i></li>
+                    <li class="li_submenu">Refrigerador <i class="icon-loop icoon-sizetres box"></i></li>
+                    <li class="li_submenu">Productos <i class="icon-fire icoon-sizetres box"></i></li>
+                </ul>
+                <!--Termina Inventario-->
+
+                
+                <!--Compras-->
+                <li class="li-menu" id="animationhovercuatro">
+                    <i class="icon-briefcase icoon-size" id="openwindowcuatro"></i>
+                    <span class="liunohovercuatro" id="liunohovercuatro">Compras</span>
+                </li>
+
+
+                <!--Proveedor-->
+                <li class="li-menu" id="animationhovercinco" >
+                    <i class="icon-user-tie icoon-size" id="openwindowscinco"></i>
+                     <span class="liunohovercinco" id="liunohovercinco">Proveedores</span>
+                </li> 
+                <!--Fin Proveedor-->
+
+
+                <!--Cliente-->
+                <li class="li-menu" id="animationhoverseis">
+                    <i class="icon-users icoon-size" id="openwindowsseis"></i>
+                    <span class="liunohoverseis" id="liunohoverseis">Clientes</span>
+                </li> 
+                <!--Fin Cliente-->
+
+                 <!--Empleado-->
+                <li class="li-menu" id="animationhoversiete">
+                    <i class="icon-man icoon-size" id="openwindowssiete"></i>
+                    <span class="liunohoversiete" id="liunohoversiete">Empleados</span>
+                </li> 
+
+                 <ul class="submenusiete cerrar" id="submenusiete" style="z-index:-10">
+                    <div class="return">
+                        <div class="return-ico" id="closewindowsiete"><i class="icon-circle-up icoon-sizedos"></i></div>
+                    </div>
+                    <li class="li_submenu">Administrador <i class="icon-credit-card icoon-sizetres box"></i></li>
+                    <li class="li_submenu">Trabajadores <i class="icon-stats-bars icoon-sizetres box"></i></li>
+                </ul>
+                 <!--Fin Empleado  icon-cogs   icon-circle-left-->
+    
+                 <!-- Reporte -->
+                 <li class="li-menu" id="animationhoverocho">
+                    <i class="icon-stats-bars icoon-size" id="openwindowsocho"></i>
+                    <span class="liunohoverocho" id="liunohoverocho">Reportes</span>
+                </li> 
+                 <!-- Fin Reporte -->
+
+
+
+                <!-- Configuracion -->
+                 <li class="li-menu" id="animationhovernueve" style="position:absolute; bottom:10px">
+                    <i class="icon-cogs icoon-size" id="openwindowsnueve"></i>
+                    <span class="liunohovernueve" id="liunohovernueve">Configuracion</span>
+                </li>
+                <!-- Fin Configuracion -->
             </ul>
+            
         </nav>
         
     </header>
