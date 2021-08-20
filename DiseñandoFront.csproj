@@ -132,6 +132,7 @@
     <Content Include="Content\Icoon\Fontsss\icomoon.svg" />
     <Content Include="Content\Icoon\Fontsss\style.css" />
     <Content Include="Content\Icoon\Read Me.txt" />
+    <Content Include="Content\img\user.png" />
     <Content Include="Content\js\main.js" />
     <Content Include="Content\css\style.css" />
     <Content Include="favicon.ico" />

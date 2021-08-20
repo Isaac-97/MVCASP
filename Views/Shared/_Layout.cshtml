@@ -17,11 +17,64 @@
             <div class="grid-box">
 
             </div>
-            <div class="grid-box">
-
+            <div class="grid-box grid-box-info-login">
+                <div class="grid-box-login">
+                    <!-- @DateTime.Now.ToString(); -->
+                </div>
+                <div class="grid-box-login">
+                    <!-- Noticia -->
+                </div>
+                <div class="grid-box-login">
+                   <div class="cirlce-login" id="logincircle">
+                        <img src="~/Content/img/user.png">
+                   </div>
+                </div>
             </div>
         </div>
     </header>
+    <div class="windowsuserlogin closeuserlogin" id="windowsuserlogin">
+        <div class="icon-x">
+            <i class="icon-cross sizetres" id="iconcross"></i>
+        </div>
+        <div class="icon-login-window">
+            <div class="cirlce-login-window">
+                    <img src="~/Content/img/user.png"/>
+            </div>
+            <p class="name-user">Hola Alex!</p>
+        </div>
+        <div class="info-login-windows-A">
+            <div class="info-login-windows-A-box">
+                 <i class="icon-user zizecuatroicon usericon"></i>
+                 <p>Apacheco</p>
+            </div>
+             <div class="info-login-windows-A-box">
+                 <i class="icon-earth zizecuatroicon"></i>
+                 <p>alain.floresimpulsaasesores.mx</p>
+            </div>
+        </div>
+        <hr>
+        <div class="boton-menu-windo-B">
+            <div class="windo-B-b">
+                <div class="windo-B-b-h">
+                   <i class="icon-user icon-desg_B"></i>
+                </div>
+                
+                <p>Perfil</p>
+            </div>
+            <div class="windo-B-b">
+                 <div class="windo-B-b-h">
+                   <i class="icon-lifebuoy icon-desg_B"></i>
+                </div>
+                 <p>Soporte</p>
+            </div>
+            <div class="windo-B-b">
+                 <div class="windo-B-b-h">
+                   <i class="icon-exit icon-desg_B"></i>
+                </div>
+                 <p>Salir</p>
+            </div>
+        </div>
+    </div>
     <header class="izquierda" style="z-index:99" >
         <nav class="izquierdanav" style="z-index:99">
             <ul class="ul" style="z-index: 99">
@@ -46,10 +99,10 @@
                     <div class="return">
                         <div class="return-ico" id="closewindow"><i class="icon-circle-up icoon-sizedos"></i></div>
                     </div>
-                    <li class="li_submenu">Ventas <i class="icon-credit-card icoon-sizetres box"></i></li>
-                    <li class="li_submenu">Corte de caja <i class="icon-stats-bars icoon-sizetres box"></i></li>
-                    <li class="li_submenu">Devoluciones <i class="icon-loop icoon-sizetres box"></i></li>
-                    <li class="li_submenu">Garantia <i class="icon-fire icoon-sizetres box"></i></li>
+                    <li class="li_submenu">@Html.ActionLink("Ventas", "Index", "Ventas", null, new { @class = "linkmenu" })<i class="icon-credit-card icoon-sizetres box"></i></li>
+                    <li class="li_submenu">@Html.ActionLink("Corte", "Index", "CorteCaja", null, new { @class = "linkmenu" })<i class="icon-stats-bars icoon-sizetres box"></i></li>
+                    <li class="li_submenu">@Html.ActionLink("Devolucion", "Index", "Devolucion", null, new { @class = "linkmenu" })<i class="icon-loop icoon-sizetres box"></i></li>
+                    <li class="li_submenu">@Html.ActionLink("Garantia", "Index", "Garantia", null, new { @class = "linkmenu" })<i class="icon-fire icoon-sizetres box"></i></li>
                 </ul>
                 <!--termina ventas-->
 
@@ -69,10 +122,10 @@
                     <div class="return">
                         <div class="return-ico" id="closewindowdos"><i class="icon-circle-up icoon-sizedos"></i></div>
                     </div>
-                    <li class="li_submenu">Producto<i class="icon-credit-card icoon-sizetres box"></i></li>
-                    <li class="li_submenu">Marcas <i class="icon-stats-bars icoon-sizetres box"></i></li>
-                    <li class="li_submenu">Refrigerador <i class="icon-loop icoon-sizetres box"></i></li>
-                    <li class="li_submenu">Productos <i class="icon-fire icoon-sizetres box"></i></li>
+                    <li class="li_submenu">@Html.ActionLink("Producto", "Index", "Ejemplo", null, new { @class = "linkmenu" })<i class="icon-credit-card icoon-sizetres box"></i></li>
+                    <li class="li_submenu">@Html.ActionLink("Marca", "Index", "Ejemplo", null, new { @class = "linkmenu" })<i class="icon-stats-bars icoon-sizetres box"></i></li>
+                    <li class="li_submenu">@Html.ActionLink("Ejemplo", "Index", "Ejemplo", null, new { @class = "linkmenu" })<i class="icon-loop icoon-sizetres box"></i></li>
+                    <li class="li_submenu">@Html.ActionLink("Ejemplo 2", "Index", "Ejemplo", null, new { @class = "linkmenu" })<i class="icon-fire icoon-sizetres box"></i></li>
                 </ul>
                 <!--Termina Inventario-->
 
@@ -109,8 +162,8 @@
                     <div class="return">
                         <div class="return-ico" id="closewindowsiete"><i class="icon-circle-up icoon-sizedos"></i></div>
                     </div>
-                    <li class="li_submenu">Administrador <i class="icon-credit-card icoon-sizetres box"></i></li>
-                    <li class="li_submenu">Trabajadores <i class="icon-stats-bars icoon-sizetres box"></i></li>
+                    <li class="li_submenu">@Html.ActionLink("Administrador", "Index", "Ejemplo", null, new { @class = "linkmenu" })<i class="icon-credit-card icoon-sizetres box"></i></li>
+                    <li class="li_submenu">@Html.ActionLink("Empleado", "Index", "Ejemplo", null, new { @class = "linkmenu" })<i class="icon-stats-bars icoon-sizetres box"></i></li>
                 </ul>
                  <!--Fin Empleado  icon-cogs   icon-circle-left-->
     
@@ -119,6 +172,15 @@
                     <i class="icon-stats-bars icoon-size" id="openwindowsocho"></i>
                     <span class="liunohoverocho" id="liunohoverocho">Reportes</span>
                 </li> 
+
+                <ul class="submenuocho cerrar" id="submenuocho" style="z-index:-10">
+                    <div class="return">
+                        <div class="return-ico" id="closewindowocho"><i class="icon-circle-up icoon-sizedos"></i></div>
+                    </div>
+                    <li class="li_submenu">@Html.ActionLink("Reporte 1", "Index", "Ejemplo", null, new { @class = "linkmenu" })<i class="icon-credit-card icoon-sizetres box"></i></li>
+                    <li class="li_submenu">@Html.ActionLink("Reporte 2", "Index", "Ejemplo", null, new { @class = "linkmenu" })<i class="icon-stats-bars icoon-sizetres box"></i></li>
+                    <li class="li_submenu">@Html.ActionLink("Reporte 3", "Index", "Ejemplo", null, new { @class = "linkmenu" })<i class="icon-stats-bars icoon-sizetres box"></i></li>
+                </ul>
                  <!-- Fin Reporte -->
 
 
@@ -128,6 +190,15 @@
                     <i class="icon-cogs icoon-size" id="openwindowsnueve"></i>
                     <span class="liunohovernueve" id="liunohovernueve">Configuracion</span>
                 </li>
+
+                <ul class="submenunueve cerrar" id="submenunueve" style="z-index:-10">
+                    <div class="return">
+                        <div class="return-ico" id="closewindownueve"><i class="icon-circle-up icoon-sizedos"></i></div>
+                    </div>
+                    <li class="li_submenu">@Html.ActionLink("Configuracion 1", "Index", "Ejemplo", null, new { @class = "linkmenu" })<i class="icon-credit-card icoon-sizetres box"></i></li>
+                    <li class="li_submenu">@Html.ActionLink("Configuracion 2", "Index", "Ejemplo", null, new { @class = "linkmenu" })<i class="icon-stats-bars icoon-sizetres box"></i></li>
+                    <li class="li_submenu">@Html.ActionLink("Configuracion 3", "Index", "Ejemplo", null, new { @class = "linkmenu" })<i class="icon-stats-bars icoon-sizetres box"></i></li>
+                </ul>
                 <!-- Fin Configuracion -->
             </ul>
             

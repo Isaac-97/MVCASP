@@ -3,11 +3,12 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Lato', sans-serif !important;
 }
 body {
     font-size: 15px;
     background: #EAEEF5;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato', sans-serif !important;
 }
 .arriba-grid{
     width:100%;
@@ -18,9 +19,51 @@ body {
    
     
 }
-/* .grid-box{
-    background: purple; 
-    border:1px solid #fff;
+.grid-box{
+    /* background: purple; 
+    border:1px solid #fff; */
+    overflow: hidden;
+    position: relative;
+}
+.cirlce-login {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    /* background: pink; */
+    margin: auto;
+    position: relative;
+    top: 10px;
+
+}
+.cirlce-login:hover{
+ cursor: pointer;
+ box-shadow: 2px -1px 9px 1px rgba(0,0,0,0.31);
+-webkit-box-shadow: 2px -1px 9px 1px rgba(0,0,0,0.31);
+-moz-box-shadow: 2px -1px 9px 1px rgba(0,0,0,0.31);
+}
+.cirlce-login::before{
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #4DD965;
+    z-index: 100;
+    right: -20px;
+    top: 35%;
+}
+.cirlce-login > img{
+    width: 100%;
+}
+.grid-box-info-login{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+}
+/* .grid-box-login{
+    background: yellow;
+    border:1px solid red;
 } */
 .arriba {
     border-top: 5px solid #0566FF;
@@ -29,9 +72,164 @@ body {
     position: fixed;
     background: #ffffff; /*Aqui esta la cabezera principal*/
     box-shadow: 1px  1px 1px rgba(0,0,0,0.4);
-    transition-duration: 1.2s;
+    transition-duration: 1.5s;
     right: 0;
+    z-index: 70;
 }
+
+/* Empieza menu lateral derecho */
+.windowsuserlogin {
+    width: 300px;
+    height: 91vh;
+    position: fixed;
+    background:#1C2B45;
+    right: 0;
+    top: 62px;
+    overflow: hidden;
+    z-index: 50;
+    transition-duration: 0.5s;
+}
+.closeuserlogin{
+    transform: translateX(350px);
+}
+.openuserlogin{
+    transform: translateX(0px);
+}
+.icon-x{
+    padding: 10px;
+    /* background: crimson; */
+    overflow: hidden;
+}
+.icon-login-window{
+    /* background: cyan; */
+    width: 100%;
+    height: auto;
+    /* padding: 10px; */
+    margin-top: 15px;
+
+}
+.cirlce-login-window{
+    width:120px;
+    height:120px;
+    border-radius: 50%;
+    /* background: red; */
+    margin: auto;
+    border:3px solid #4DD965;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+.cirlce-login-window > img{
+    width: 100%;
+}
+.sizetres {
+    /* border: 1px solid #fff; */
+    padding: 5px;
+    position: relative;
+    left: 90%;
+    color: #647491;
+    transition-duration: 0.5s;
+    font-size: 20px;
+}
+.sizetres:hover{
+    color:#fff;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.name-user{
+    /* border:1px solid #fff; */
+    padding: 5px;
+    text-align: center;
+    font-size: 1em;
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: 10px;
+    width: 100%;
+}
+.info-login-windows-A{
+    /* border:1px solid red; */
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.info-login-windows-A-box{
+    width: 80%;
+    margin:5px auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    background: #243550; /*#243550  o  2A3B5A*/
+}
+.info-login-windows-A-box > p{
+    /* border:1px solid #fff; */
+    margin: 0 10px;
+    vertical-align: middle;
+    font-size: 0.8em;
+    color:#8796AF;
+}
+.zizecuatroicon {
+    /* border: 1px solid red; */
+    /* padding: 5px; */
+    font-size: 20px;
+}
+.usericon{
+    color:#4DD965;
+    
+}
+.icon-earth{
+   color: #8796AF
+}
+hr {
+    top: 40px;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    border: 1px solid #8796AF;
+}
+.boton-menu-windo-B{
+    /* border:1px solid red; */
+    position: relative;
+    top: 65px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.windo-B-b-h{
+    /* border:2px solid purple; */
+    padding: 5px;
+}
+.windo-B-b-h:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+.windo-B-b{
+    /* border:1px solid green;   */
+    margin:0 auto;
+}
+.windo-B-b > p{
+    padding: 5px;
+    color:#fff;
+    font-size: 0.9em;
+    font-weight: 400;
+}
+.icon-desg_B{
+    font-size: 35px;
+    color:#8796AF;
+}
+
+
+
+
+
+/* otro */
 .liunohovernueve,
 .liunohoverocho,
 .liunohoversiete,
@@ -128,6 +326,8 @@ body {
     font-size: 1.4em;
     color: #505a6a;
 }
+.submenunueve,
+.submenuocho,
 .submenusiete,
 .submenutres,
 .submenudos,
@@ -181,22 +381,30 @@ display: none;
     opacity: 0.7;
     font-size: 35px;
 }
+.linkmenu{
+    /* border:1px solid red; */
+    display: block;
+    padding: 18px;
+}
+.linkmenu,
 .li_submenu {
     /*border: 1px solid red;*/
-    padding: 18px;
+    /* padding: 18px; */
     /* margin: 10px; */
     list-style: none;
     color:#fff;
     font-weight:700;
-    font-size:1.2em;
+    font-size:1.1em;
     opacity:0.7;
     position:relative;
     text-align:left;
+    text-decoration: none;
 }
+.linkmenu:hover,
 .li_submenu:hover {
     background: #1c2b45;
     cursor: pointer;
-    opacity: 0.9;
+    opacity: 1;
 }
 
 .box {
@@ -204,7 +412,7 @@ display: none;
     right: 5px;
     width: 40px;
     height: 34px;
-    /*background: red;*/
+    /* background: red; */
     bottom: 5px;
     color: #fff;
     opacity: 0.9;

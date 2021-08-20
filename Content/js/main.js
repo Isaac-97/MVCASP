@@ -14,7 +14,11 @@ homewindow.addEventListener('click', function(){
     submenu.classList.add("cerrar");
     submenusiete.classList.add("cerrar");
     submenusiete.classList.remove("abrir");
-    headarriba.style.width="100%";
+    submenuocho.classList.add("cerrar");
+    submenuocho.classList.remove("abrir");
+    submenuocho.classList.add("cerrar");
+    submenuocho.classList.remove("abrir");
+    headarriba.style.width="96%";
     headarriba.style.transitionDuration="0.5s";
 
 });
@@ -28,7 +32,11 @@ openwindowcuatro.addEventListener('click', function(){
     submenu.classList.add("cerrar");
     submenusiete.classList.add("cerrar");
     submenusiete.classList.remove("abrir");
-    headarriba.style.width="100%";
+    submenuocho.classList.add("cerrar");
+    submenuocho.classList.remove("abrir");
+    submenuocho.classList.add("cerrar");
+    submenuocho.classList.remove("abrir");
+    headarriba.style.width="96%";
     headarriba.style.transitionDuration="0.5s";
 
 });
@@ -43,12 +51,16 @@ openwindowscinco.addEventListener('click', function(){
     submenu.classList.add("cerrar");
     submenusiete.classList.add("cerrar");
     submenusiete.classList.remove("abrir");
-    headarriba.style.width="100%";
+    submenuocho.classList.add("cerrar");
+    submenuocho.classList.remove("abrir");
+    submenuocho.classList.add("cerrar");
+    submenuocho.classList.remove("abrir");
+    headarriba.style.width="96%";
     headarriba.style.transitionDuration="0.5s";
 
 });
 
-//Clientes no tiene menu openwindowscinco
+//Clientes no tiene menu 
 
 var openwindowsseis = document.getElementById('openwindowsseis');
 openwindowsseis.addEventListener('click', function(){
@@ -58,19 +70,31 @@ openwindowsseis.addEventListener('click', function(){
     submenu.classList.add("cerrar");
     submenusiete.classList.add("cerrar");
     submenusiete.classList.remove("abrir");
-    headarriba.style.width="100%";
+    submenuocho.classList.add("cerrar");
+    submenuocho.classList.remove("abrir");
+    submenuocho.classList.add("cerrar");
+    submenuocho.classList.remove("abrir");
+    headarriba.style.width="96%";
     headarriba.style.transitionDuration="0.5s";
 
 });
  
-//Empleado no tiene menu openwindowscinco
+//Empleado no tiene menu 
 var openwindowsseis = document.getElementById('openwindowsseis');
 openwindowsseis.addEventListener('click', function(){
     submenudos.classList.add("cerrar");
     submenudos.classList.remove("abrir");
     submenu.classList.remove("abrir");
     submenu.classList.add("cerrar");
-    headarriba.style.width="100%";
+
+    submenusiete.classList.add("cerrar");
+    submenusiete.classList.remove("abrir");
+    submenuocho.classList.add("cerrar");
+    submenuocho.classList.remove("abrir");
+
+    submenunueve.classList.add("cerrar");
+    submenunueve.classList.remove("abrir");
+    headarriba.style.width="96%";
     headarriba.style.transitionDuration="0.5s";
 });   
 
@@ -92,8 +116,12 @@ openwindows.addEventListener('click', function () {
  submenudos.classList.remove("abrir");
  submenu.classList.remove("cerrar");
  submenu.classList.add("abrir");
+ submenuocho.classList.add("cerrar");
+ submenuocho.classList.remove("abrir");
  submenusiete.classList.add("cerrar");
  submenusiete.classList.remove("abrir");
+ submenunueve.classList.add("cerrar");
+submenunueve.classList.remove("abrir");
  headarriba.style.width="78%";
  headarriba.style.right="0%"
 });
@@ -105,7 +133,7 @@ closewindow.addEventListener('click', function () {
  var headarriba = document.getElementById('headarriba');
  submenu.classList.add("cerrar");
  submenu.classList.remove("abrir");
- headarriba.style.width="100%";
+ headarriba.style.width="96%";
  headarriba.style.transitionDuration="0.5s";
 });
 
@@ -119,6 +147,10 @@ openwindowsDos.addEventListener('click', function () {
  submenu.classList.remove("abrir");
  submenudos.classList.remove("cerrar");
  submenudos.classList.add("abrir");
+ submenuocho.classList.add("cerrar");
+ submenuocho.classList.remove("abrir");
+ submenunueve.classList.add("cerrar");
+submenunueve.classList.remove("abrir");
  submenusiete.classList.add("cerrar");
  submenusiete.classList.remove("abrir");
  headarriba.style.width="78%";
@@ -132,7 +164,7 @@ closewindowdos.addEventListener('click', function () {
  let headarriba = document.getElementById('headarriba');
  submenudos.classList.add("cerrar");
  submenudos.classList.remove("abrir");
- headarriba.style.width="100%";
+ headarriba.style.width="96%";
  headarriba.style.transitionDuration="0.5s";
 });
 
@@ -146,6 +178,10 @@ openwindowssiete.addEventListener('click', function () {
  submenu.classList.remove("abrir");
  submenudos.classList.add("cerrar");
  submenudos.classList.remove("abrir");
+ submenuocho.classList.add("cerrar");
+submenuocho.classList.remove("abrir");
+submenunueve.classList.add("cerrar");
+submenunueve.classList.remove("abrir");
  submenusiete.classList.add("abrir");
  submenusiete.classList.remove("cerrar");
  headarriba.style.width="78%";
@@ -156,11 +192,62 @@ var closewindowsiete = document.getElementById('closewindowsiete');
 closewindowsiete.addEventListener('click', function () {
  submenusiete.classList.add("cerrar");
  submenusiete.classList.remove("abrir");
- headarriba.style.width="100%";
+ headarriba.style.width="96%";
  headarriba.style.transitionDuration="0.5s";
 });
 
 
+//Menu Reporte
+var openwindowsocho = document.getElementById('openwindowsocho');
+openwindowsocho.addEventListener('click', function () {
+ var submenuocho = document.getElementById('submenuocho');
+ submenu.classList.add("cerrar");
+ submenu.classList.remove("abrir");
+ submenudos.classList.add("cerrar");
+ submenudos.classList.remove("abrir");
+ submenusiete.classList.add("cerrar");
+ submenusiete.classList.remove("abrir");
+ submenunueve.classList.add("cerrar");
+ submenunueve.classList.remove("abrir");
+ submenuocho.classList.remove("cerrar");
+ submenuocho.classList.add("abrir");
+ headarriba.style.width="78%";
+ headarriba.style.right="0%"
+});
+
+var closewindowocho = document.getElementById('closewindowocho');
+closewindowocho.addEventListener('click', function () {
+submenuocho.classList.add("cerrar");
+submenuocho.classList.remove("abrir");
+ headarriba.style.width="96%";
+ headarriba.style.transitionDuration="0.5s";
+});
+
+//Configuracion
+var openwindowsnueve = document.getElementById('openwindowsnueve');
+openwindowsnueve.addEventListener('click', function () {
+ var submenunueve = document.getElementById('submenunueve');
+ submenu.classList.add("cerrar");
+ submenu.classList.remove("abrir");
+ submenudos.classList.add("cerrar");
+ submenudos.classList.remove("abrir");
+ submenusiete.classList.add("cerrar");
+ submenusiete.classList.remove("abrir");
+ submenuocho.classList.remove("abrir");
+ submenuocho.classList.add("cerrar");
+ submenunueve.classList.remove("cerrar");
+ submenunueve.classList.add("abrir");
+ headarriba.style.width="78%";
+ headarriba.style.right="0%"
+});
+
+var closewindownueve = document.getElementById('closewindownueve');
+closewindownueve.addEventListener('click', function () {
+submenunueve.classList.add("cerrar");
+submenunueve.classList.remove("abrir");
+ headarriba.style.width="96%";
+ headarriba.style.transitionDuration="0.5s";
+});
 
 
 // Menu Hover
@@ -279,4 +366,21 @@ animationhovernueve.addEventListener('mouseover', function (){
 animationhovernueve.addEventListener('mouseout', function (){
     liunohovernueve.style.display="none";
     liunohovernueve.style.opacity=" 0.1";
+});
+
+
+
+//menu latera
+
+var logincircle = document.getElementById('logincircle');
+logincircle.addEventListener('click',function(){
+    var windowsuserlogin = document.getElementById('windowsuserlogin');
+    windowsuserlogin.classList.remove("closeuserlogin");
+    windowsuserlogin.classList.add("openuserlogin");  
+});
+
+var iconcross = document.getElementById('iconcross');
+iconcross.addEventListener('click',function(){
+    windowsuserlogin.classList.add("closeuserlogin"); 
+    windowsuserlogin.classList.remove("openuserlogin");
 });
