@@ -9,6 +9,7 @@
     @Styles.Render("~/Content/Icoon/Fontsss/style.css")
 </head>
 <body id="body">
+    <div class="darkmode"></div>
     <header class="arriba" id="headarriba">
         <div class="arriba-grid">
             <div class="grid-box">
@@ -74,6 +75,27 @@
                  <p>Salir</p>
             </div>
         </div>
+    </div>
+    <div class="popupporfile">
+        <h3 class="h3porfile">Perfil de Usuario</h3>
+        <form class="formporfile">
+            <label class="nombreporfile">Nombre:
+            </label>
+            <input class="inputporfile" type="text" placeholder="Jhonny" />
+        </form>
+        <form class="pictureporfile formporfile">
+            <label class="nombreporfile">Imagen:</label>
+            <div class="containerpicture">
+                <div class="a">
+                    <div class="img-a">
+                        <img src="~/Content/img/user.png" />
+                    </div>
+                </div>
+                <div class="a">
+                    <input class="inputporfileimagebutton" type="submit" value="Haga clic aquí para subir su archivo"/>
+                </div>
+            </div>            
+        </form>
     </div>
     <header class="izquierda" style="z-index:99" >
         <nav class="izquierdanav" style="z-index:99">

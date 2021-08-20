@@ -225,9 +225,88 @@ hr {
     color:#8796AF;
 }
 
+.darkmode {
+    position:fixed;
+    background-color: rgba(0,0,0,0.5);
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:108;
+}
+.popupporfile {
+    position:fixed;
+    top:10vh;
+    width:50%;
+    height:80vh;
+    background-color:white;
+    border-radius:5px;
+    margin:auto 25%;
+    z-index:110;
+}
 
+.popupporfile > h3 {
+    margin-top: 30px;
+    padding: 5px;
+    text-align: center;
+    font-size: 2em;
+    color: #303F9F;
+    font-weight:400;
+}
 
+.formporfile {
+    width:80%;
+    margin:0 10%;
+    margin-top:30px;
+}
 
+.nombreporfile {
+    display: block;
+    padding: 10px 0;
+    color: #99A3B7;
+    font-size: 1.4em;
+}
+
+.inputporfile {
+    display: block;
+    width: 100%;
+    height: 46px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #99A3B7;
+    font-size: 1.2em;
+    line-height: 21px;
+    color: rgb(8, 15, 26);
+}
+.containerpicture {
+    display:grid;
+    grid-template-columns:20% 80%;
+    height:90px;
+}
+
+/*.a {
+    border:1px solid red;
+}*/
+
+.img-a {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #556183;
+}
+.img-a > img {
+    width:100%;
+}
+
+.inputporfileimagebutton{
+    display:block;
+    padding:5px;
+    position:relative;
+    top:40px;
+    left:30px;
+    font-size:1.1em;
+    font-weight:300;
+}
 
 /* otro */
 .liunohovernueve,
@@ -254,7 +333,7 @@ hr {
     left: 50px;
     top: 15px;
     /* border: 1px solid #555; */
-    -webkit-box-shadow: -3px 1px 23px -4px rgba(0,0,0,0.98); 
+    -webkit-box-shadow: -3px 1px 23px -4px rgba(0,0,0,0.98);
     box-shadow: -3px 1px 23px -4px rgba(0,0,0,0.98);
     display: none;
 }
