@@ -384,3 +384,31 @@ iconcross.addEventListener('click',function(){
     windowsuserlogin.classList.add("closeuserlogin"); 
     windowsuserlogin.classList.remove("openuserlogin");
 });
+
+//box de agergar foto
+var openwindowsprofile = document.getElementById('openwindowsprofile');
+openwindowsprofile.addEventListener('click',function(){
+    var popupporfile = document.getElementById('popupporfile');
+    var darkmode = document.getElementById('darkmode');
+    darkmode.classList.remove('darkmodenone');
+    darkmode.classList.add('darkmodeopen');
+
+    popupporfile.classList.remove('popupporfilenone');
+    popupporfile.classList.add('popupporfileanimation');
+
+});
+
+
+
+var closeprofilex = document.getElementById('closeprofilex');
+closeprofilex.addEventListener('click',function(){
+
+    var popupporfile = document.getElementById('popupporfile');
+    var darkmode = document.getElementById('darkmode');
+    darkmode.classList.remove('darkmodeopen');
+    darkmode.classList.add('darkmodenone');
+
+    popupporfile.classList.remove('popupporfileanimation');
+    popupporfile.classList.add('popupporfilenone');
+
+});

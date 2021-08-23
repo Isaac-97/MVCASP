@@ -9,7 +9,7 @@
     @Styles.Render("~/Content/Icoon/Fontsss/style.css")
 </head>
 <body id="body">
-    <div class="darkmode"></div>
+    <div class="darkmode darkmodenone" id="darkmode"></div>
     <header class="arriba" id="headarriba">
         <div class="arriba-grid">
             <div class="grid-box">
@@ -23,7 +23,10 @@
                     <!-- @DateTime.Now.ToString(); -->
                 </div>
                 <div class="grid-box-login">
-                    <!-- Noticia -->
+                     <div class="login-newspaper" id="loginnewspaper">
+                        <i class="icon-newspaper iconnewspaperclass"></i>
+                   </div>
+                    @* <div class="contentgrid-box-login"></div> *@
                 </div>
                 <div class="grid-box-login">
                    <div class="cirlce-login" id="logincircle">
@@ -56,8 +59,8 @@
         <hr>
         <div class="boton-menu-windo-B">
             <div class="windo-B-b">
-                <div class="windo-B-b-h">
-                   <i class="icon-user icon-desg_B"></i>
+                <div class="windo-B-b-h openwindowsprofile">
+                   <i class="icon-user icon-desg_B" id="openwindowsprofile"></i>
                 </div>
                 
                 <p>Perfil</p>
@@ -76,7 +79,9 @@
             </div>
         </div>
     </div>
-    <div class="popupporfile">
+    @* darkmodeopen *@
+    <div class="popupporfile popupporfilenone" id="popupporfile">
+        <div class="closeprofile"><i class=" icon-cross closeprofile-x" id="closeprofilex"></i></div>
         <h3 class="h3porfile">Perfil de Usuario</h3>
         <form class="formporfile">
             <label class="nombreporfile">Nombre:
@@ -94,7 +99,10 @@
                 <div class="a">
                     <input class="inputporfileimagebutton" type="submit" value="Haga clic aquí para subir su archivo"/>
                 </div>
-            </div>            
+            </div> 
+            <div class="pictureporfile-button">
+                <button class="btn-up-profile">Listo</button>
+            </div>           
         </form>
     </div>
     <header class="izquierda" style="z-index:99" >

@@ -56,15 +56,23 @@ body {
     width: 100%;
 }
 .grid-box-info-login{
+    /* text-align: center; */
+    /* display: grid;
+    grid-template-columns: repeat(3,1fr); */
     text-align: center;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
 
 }
-/* .grid-box-login{
-    background: yellow;
-    border:1px solid red;
-} */
+.grid-box-login{
+    display:inline-block;
+    /* background: yellow; 
+    border:1px solid red; */
+    width: 70px;
+    height: 100%;
+    clear: both;
+    vertical-align: top;
+    position: relative;
+    right: -60px;
+}
 .arriba {
     border-top: 5px solid #0566FF;
     width:96%;
@@ -107,6 +115,28 @@ body {
     /* padding: 10px; */
     margin-top: 15px;
 
+}
+.login-newspaper{
+    /* border:1px solid red; */
+    height: 100%;
+    /* line-height:70px; */
+}
+.iconnewspaperclass{
+    font-size: 2em;
+    color:#918E8E;
+    /* background:green; */
+    display: block;
+    height: 100%;
+   
+    
+}
+.icon-newspaper:before {
+    content: "\e904";
+    position: relative;
+    top: 13px;
+}
+.iconnewspaperclass:hover{
+    cursor: pointer;
 }
 .cirlce-login-window{
     width:120px;
@@ -233,17 +263,84 @@ hr {
     right:0;
     bottom:0;
     z-index:108;
+    
+}
+.darkmodenone{
+    display:none;
+}
+.darkmodeopen{
+    display:block;
 }
 .popupporfile {
-    position:fixed;
-    top:10vh;
-    width:50%;
-    height:80vh;
-    background-color:white;
-    border-radius:5px;
-    margin:auto 25%;
-    z-index:110;
+    position: fixed;
+    top: 13vh;
+    width: 44%;
+    height: 74vh;
+    background-color: white;
+    border-radius: 5px;
+    margin: auto 28%;
+    z-index: 110;
+  
+    
 }
+.popupporfilenone{
+    
+    /* animation: abajo 0.4s linear; */
+    display:none;
+}
+/* @keyframes abajo{
+    0%{
+        opacity: 0.1;
+        transform: translateY(0px);
+    }
+    50%{
+        opacity: 0.5;
+        
+    }
+}  */
+.closeprofile{
+    /* border: 1px solid red; */
+    width: 40px;
+    position: absolute;
+    right: -10px;
+    height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 40px;
+    overflow: hidden;
+    background: #fff;
+    border: none;
+    top: -10px;
+    --webkit-box-shadow: -1px 5px 22px 3px rgba(0,0,0,0.61); 
+    box-shadow: -1px 5px 22px 3px rgba(0,0,0,0.61);
+   
+}
+.closeprofile-x{
+
+ font-size: 1.3em;
+ /* border:1px solid red; */
+ display: block;
+ color:#918E8E;
+ padding: 10px;
+ 
+}
+.closeprofile-x:hover{
+    cursor: pointer;
+}
+.popupporfileanimation{
+    display: block;
+    animation: arriba 0.4s linear;
+}
+@keyframes arriba{
+    0%{
+        opacity: 0.1;
+        transform: translateY(-80px);
+    }
+    50%{
+        opacity: 0.5;
+        
+    }
+} 
 
 .popupporfile > h3 {
     margin-top: 30px;
@@ -257,6 +354,8 @@ hr {
 .formporfile {
     width:80%;
     margin:0 10%;
+    /* background:green ; */
+
     margin-top:30px;
 }
 
@@ -264,7 +363,8 @@ hr {
     display: block;
     padding: 10px 0;
     color: #99A3B7;
-    font-size: 1.4em;
+    font-size: 1.2em;
+    /* background: #1C2B45; */
 }
 
 .inputporfile {
@@ -277,36 +377,76 @@ hr {
     font-size: 1.2em;
     line-height: 21px;
     color: rgb(8, 15, 26);
+    /* background: red; */
 }
 .containerpicture {
-    display:grid;
-    grid-template-columns:20% 80%;
-    height:90px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    height: auto;
+    /* background: purple; */
 }
 
-/*.a {
-    border:1px solid red;
-}*/
+/* .a {
+    border:1px solid orange;
+     height: 60px; 
+} */
 
 .img-a {
     width: 100%;
     height: 100%;
     overflow: hidden;
     background: #556183;
+    border:3px dashed #99A3B7;
+    /* padding:px; */
 }
 .img-a > img {
     width:100%;
 }
 
 .inputporfileimagebutton{
-    display:block;
-    padding:5px;
-    position:relative;
-    top:40px;
-    left:30px;
-    font-size:1.1em;
-    font-weight:300;
+    display: block;
+    padding: 5px;
+    position: relative;
+    top: 25px;
+    left: 30px;
+    font-size: 1.1em;
+    font-weight: 300;
+
 }
+.inputporfileimagebutton:hover{
+    cursor: pointer;
+}
+.pictureporfile-button{
+    /* border:1px solid red; */
+    margin-top: 40px;
+    text-align: center;
+}
+.btn-up-profile{
+    width: 200px;
+    height: 46px;
+    border-radius: 2px;
+    border:1px solid #0566FF;
+    color:#fff;
+    background: #0566FF;
+    font-weight: 400;
+    font-size: 1.5em;
+}
+.btn-up-profile:hover{
+    background-color: #0049bd;
+    border-color: #0049bd;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* otro */
 .liunohovernueve,
