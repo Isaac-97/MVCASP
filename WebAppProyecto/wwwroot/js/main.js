@@ -392,7 +392,6 @@ openwindowsprofile.addEventListener('click',function(){
     var darkmode = document.getElementById('darkmode');
     darkmode.classList.remove('darkmodenone');
     darkmode.classList.add('darkmodeopen');
-
     popupporfile.classList.remove('popupporfilenone');
     popupporfile.classList.add('popupporfileanimation');
 

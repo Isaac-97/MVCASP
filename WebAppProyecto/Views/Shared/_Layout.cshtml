@@ -35,6 +35,10 @@
             </div>
         </div>
     </header>
+    <div class="grid-box-login-popup">
+        <div class="triangulo"></div>
+        <div class="close-notice">  <i class="icon-cross" id=""></i></div>
+    </div>
     <div class="windowsuserlogin closeuserlogin" id="windowsuserlogin">
         <div class="icon-x">
             <i class="icon-cross sizetres" id="iconcross"></i>
@@ -55,7 +59,7 @@
                 <p>alain.floresimpulsaasesores.mx</p>
             </div>
         </div>
-        <hr>
+        @* <hr> *@
         <div class="boton-menu-windo-B">
             <div class="windo-B-b">
                 <div class="windo-B-b-h openwindowsprofile">
@@ -111,9 +115,10 @@
 
                 <!--Home-->
                 <li class="li-menu" id="animationhover">
-                    <i class="icon-home3 icoon-size" id="homewindow"></i>
-                    @Html.ActionLink(" ", "Index", "Home", null, new { @class = "nonele" })
-                    <span class="liunohover" id="liunohover">Inicio</span>
+                    
+                     <a class="nonele" asp-area="" asp-controller="Home" asp-action="Index"><i class="icon-home3 icoon-size" id="homewindow"></i></a>
+                    @* @Html.ActionLink(" ", "Index", "Home",null, new { @class = "nonele" }) *@
+                    
                 </li>
 
                 <!--Fin Home-->

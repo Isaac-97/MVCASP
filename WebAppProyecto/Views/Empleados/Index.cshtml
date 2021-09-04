@@ -3,17 +3,6 @@
 @{
     ViewData["Title"] = "Listado de Empleados";
 }
-<style>
-    .main-conteiner {
-        width:95%;
-        position:absolute;
-        top:60px;
-        right:0;
-        padding:5px;
-        text-align:center;
-        background-color:greenyellow;
-    }
-</style>
 <div class="main-conteiner">
     <h1>Listado de Empleados</h1>
 
@@ -37,15 +26,6 @@
                 </th>
                 <th>
                     @Html.DisplayNameFor(model => model.FechaNacimiento)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.FechaRegistro)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.CURP)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.IdSexo)
                 </th>
                 <th>
                     @Html.DisplayNameFor(model => model.Direccion)
@@ -75,15 +55,7 @@
                     <td>
                         @Html.DisplayFor(modelItem => item.FechaNacimiento)
                     </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.FechaRegistro)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.CURP)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.IdSexo)
-                    </td>
+                   
                     <td>
                         @Html.DisplayFor(modelItem => item.Direccion)
                     </td>

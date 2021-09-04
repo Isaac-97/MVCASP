@@ -3,13 +3,12 @@
 @{
     ViewData["Title"] = "Eliminar";
 }
-
+<div class="main-conteiner">
 <h1>Eliminar Registro</h1>
 
 <h3>Estas Seguro de querer eliminar el Registro?</h3>
 <div>
     <h4>Empleado</h4>
-    <hr />
     <dl class="row">
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Nombre)
@@ -78,4 +77,5 @@
         <input type="submit" value="Eliminar" class="btn btn-danger" /> |
         <a asp-action="Index">Regresar ala lista de Empleados</a>
     </form>
+</div>
 </div>
