@@ -13,14 +13,17 @@ namespace WebAppProyecto.Models
         public int IdEmpleado { get; set; }
         [Display (Name = "Nombre")]
         public string Nombre { get; set; }
-        [Display (Name = "Apellido Paterno")]
+        [Display (Name = "A.Paterno")]
         public string APaterno { get; set; }
-        [Display (Name = "Apellido Materno")]
+        [Display (Name = "A.Materno")]
         public string AMaterno { get; set; }
         [Display (Name = "Celular")]
         public string Telefono { get; set; }
+        [DataType(DataType.Date)]
+        [Display(Name = "F.Nacimiento")]
         public DateTime FechaNacimiento { get; set; }
-        [Display(Name = "Fecha de Registro")]
+        [DataType (DataType.Date)]
+        [Display(Name = "F.Registro")]
         public DateTime FechaRegistro { get; set; }
         [StringLength (18, MinimumLength = 18)]
         [Display (Name = "Curp")]

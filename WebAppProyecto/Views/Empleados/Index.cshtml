@@ -4,71 +4,73 @@
     ViewData["Title"] = "Listado de Empleados";
 }
 <div class="main-conteiner">
-    <h1>Listado de Empleados</h1>
-
+    <br>
+    <h1 class="title-section">Listado de Empleados</h1>
+    <br>
     <p>
-        <a asp-action="Create">Crear Nuevo Empleado</a>
+        <a class="btn-controller-all btn-color_blue " asp-action="Create">Nuevo Empleado</a>
     </p>
-    <table class="table">
+    <br>
+    <div class="table">
         <thead>
-            <tr>
-                <th>
+            <div class="trindex">
+                <div class="thindex">
                     @Html.DisplayNameFor(model => model.Nombre)
-                </th>
-                <th>
+                </div>
+                <div class="thindex">
                     @Html.DisplayNameFor(model => model.APaterno)
-                </th>
-                <th>
+               </div>
+                <div class="thindex">
                     @Html.DisplayNameFor(model => model.AMaterno)
-                </th>
-                <th>
+                </div>
+                <div class="thindex">
                     @Html.DisplayNameFor(model => model.Telefono)
-                </th>
-                <th>
+               </div>
+                <div class="thindex">
                     @Html.DisplayNameFor(model => model.FechaNacimiento)
-                </th>
-                <th>
+                </div>
+                <div class="thindex">
                     @Html.DisplayNameFor(model => model.Direccion)
-                </th>
-                <th>
+                </div>
+                <div class="thindex">
                     @Html.DisplayNameFor(model => model.Correo)
-                </th>
-                <th></th>
-            </tr>
+                </div>
+                @* <th></th> *@
+            </div>
         </thead>
-        <tbody>
+        <div class="tbodyindex">
             @foreach (var item in Model)
             {
-                <tr>
-                    <td>
+                <div class="trindex">
+                    <div class="tdindex">
                         @Html.DisplayFor(modelItem => item.Nombre)
-                    </td>
-                    <td>
+                    </div>
+                    <div class="tdindex">
                         @Html.DisplayFor(modelItem => item.APaterno)
-                    </td>
-                    <td>
+                    </div>
+                    <div class="tdindex">
                         @Html.DisplayFor(modelItem => item.AMaterno)
-                    </td>
-                    <td>
+                    </div>
+                    <div class="tdindex">
                         @Html.DisplayFor(modelItem => item.Telefono)
-                    </td>
-                    <td>
+                    </div>
+                    <div class="tdindex">
                         @Html.DisplayFor(modelItem => item.FechaNacimiento)
-                    </td>
+                    </div>
                    
-                    <td>
+                    <div class="tdindex">
                         @Html.DisplayFor(modelItem => item.Direccion)
-                    </td>
-                    <td>
+                    </div>
+                    <div class="tdindex">
                         @Html.DisplayFor(modelItem => item.Correo)
-                    </td>
-                    <td>
-                        <a asp-action="Edit" asp-route-id="@item.IdEmpleado">Editar</a> |
-                        <a asp-action="Details" asp-route-id="@item.IdEmpleado">Detalle</a> |
-                        <a asp-action="Delete" asp-route-id="@item.IdEmpleado">Eliminar</a>
-                    </td>
-                </tr>
+                    </div>
+                    <div class="tdindex">
+                        <a class="btn-controller-all btn-color_blue" asp-action="Edit" asp-route-id="@item.IdEmpleado">Editar</a> |
+                        <a class="btn-controller-all btn-color_green" asp-action="Details" asp-route-id="@item.IdEmpleado">Detalle</a> |
+                        <a class="btn-controller-all btn-color_red" asp-action="Delete" asp-route-id="@item.IdEmpleado">Eliminar</a>
+                    </div>
+                </div>
             }
-        </tbody>
-    </table>
+        </div>
+    </div>
 </div>

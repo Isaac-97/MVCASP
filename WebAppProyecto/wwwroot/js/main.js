@@ -18,8 +18,8 @@ homewindow.addEventListener('click', function(){
     submenuocho.classList.remove("abrir");
     submenuocho.classList.add("cerrar");
     submenuocho.classList.remove("abrir");
-    headarriba.style.width="96%";
-    headarriba.style.transitionDuration="0.5s";
+    // headarriba.style.width="96%";
+    // headarriba.style.transitionDuration="0.5s";
 
 });
 
@@ -36,8 +36,8 @@ openwindowcuatro.addEventListener('click', function(){
     submenuocho.classList.remove("abrir");
     submenuocho.classList.add("cerrar");
     submenuocho.classList.remove("abrir");
-    headarriba.style.width="96%";
-    headarriba.style.transitionDuration="0.5s";
+    // headarriba.style.width="96%";
+    // headarriba.style.transitionDuration="0.5s";
 
 });
 
@@ -55,8 +55,8 @@ openwindowscinco.addEventListener('click', function(){
     submenuocho.classList.remove("abrir");
     submenuocho.classList.add("cerrar");
     submenuocho.classList.remove("abrir");
-    headarriba.style.width="96%";
-    headarriba.style.transitionDuration="0.5s";
+    // headarriba.style.width="96%";
+    // headarriba.style.transitionDuration="0.5s";
 
 });
 
@@ -74,8 +74,8 @@ openwindowsseis.addEventListener('click', function(){
     submenuocho.classList.remove("abrir");
     submenuocho.classList.add("cerrar");
     submenuocho.classList.remove("abrir");
-    headarriba.style.width="96%";
-    headarriba.style.transitionDuration="0.5s";
+    // headarriba.style.width="96%";
+    // headarriba.style.transitionDuration="0.5s";
 
 });
  
@@ -94,8 +94,8 @@ openwindowsseis.addEventListener('click', function(){
 
     submenunueve.classList.add("cerrar");
     submenunueve.classList.remove("abrir");
-    headarriba.style.width="96%";
-    headarriba.style.transitionDuration="0.5s";
+    // headarriba.style.width="96%";
+    // headarriba.style.transitionDuration="0.5s";
 });   
 
 // var openwindowscinco = document.getElementById('openwindowscinco');
@@ -122,8 +122,8 @@ openwindows.addEventListener('click', function () {
  submenusiete.classList.remove("abrir");
  submenunueve.classList.add("cerrar");
 submenunueve.classList.remove("abrir");
- headarriba.style.width="78%";
- headarriba.style.right="0%"
+//  headarriba.style.width="78%";
+//  headarriba.style.right="0%"
 });
 
 
@@ -133,8 +133,8 @@ closewindow.addEventListener('click', function () {
  var headarriba = document.getElementById('headarriba');
  submenu.classList.add("cerrar");
  submenu.classList.remove("abrir");
- headarriba.style.width="96%";
- headarriba.style.transitionDuration="0.5s";
+//  headarriba.style.width="96%";
+//  headarriba.style.transitionDuration="0.5s";
 });
 
 
@@ -153,8 +153,8 @@ openwindowsDos.addEventListener('click', function () {
 submenunueve.classList.remove("abrir");
  submenusiete.classList.add("cerrar");
  submenusiete.classList.remove("abrir");
- headarriba.style.width="78%";
- headarriba.style.right="0%"
+//  headarriba.style.width="78%";
+//  headarriba.style.right="0%"
 });
 
 
@@ -164,8 +164,8 @@ closewindowdos.addEventListener('click', function () {
  let headarriba = document.getElementById('headarriba');
  submenudos.classList.add("cerrar");
  submenudos.classList.remove("abrir");
- headarriba.style.width="96%";
- headarriba.style.transitionDuration="0.5s";
+//  headarriba.style.width="96%";
+//  headarriba.style.transitionDuration="0.5s";
 });
 
 
@@ -184,16 +184,16 @@ submenunueve.classList.add("cerrar");
 submenunueve.classList.remove("abrir");
  submenusiete.classList.add("abrir");
  submenusiete.classList.remove("cerrar");
- headarriba.style.width="78%";
- headarriba.style.right="0%"
+//  headarriba.style.width="78%";
+//  headarriba.style.right="0%"
 });
 
 var closewindowsiete = document.getElementById('closewindowsiete');
 closewindowsiete.addEventListener('click', function () {
  submenusiete.classList.add("cerrar");
  submenusiete.classList.remove("abrir");
- headarriba.style.width="96%";
- headarriba.style.transitionDuration="0.5s";
+//  headarriba.style.width="96%";
+//  headarriba.style.transitionDuration="0.5s";
 });
 
 
@@ -211,16 +211,16 @@ openwindowsocho.addEventListener('click', function () {
  submenunueve.classList.remove("abrir");
  submenuocho.classList.remove("cerrar");
  submenuocho.classList.add("abrir");
- headarriba.style.width="78%";
- headarriba.style.right="0%"
+//  headarriba.style.width="78%";
+//  headarriba.style.right="0%"
 });
 
 var closewindowocho = document.getElementById('closewindowocho');
 closewindowocho.addEventListener('click', function () {
 submenuocho.classList.add("cerrar");
 submenuocho.classList.remove("abrir");
- headarriba.style.width="96%";
- headarriba.style.transitionDuration="0.5s";
+//  headarriba.style.width="96%";
+//  headarriba.style.transitionDuration="0.5s";
 });
 
 //Configuracion
@@ -237,16 +237,16 @@ openwindowsnueve.addEventListener('click', function () {
  submenuocho.classList.add("cerrar");
  submenunueve.classList.remove("cerrar");
  submenunueve.classList.add("abrir");
- headarriba.style.width="78%";
- headarriba.style.right="0%"
+//  headarriba.style.width="78%";
+//  headarriba.style.right="0%"
 });
 
 var closewindownueve = document.getElementById('closewindownueve');
 closewindownueve.addEventListener('click', function () {
 submenunueve.classList.add("cerrar");
 submenunueve.classList.remove("abrir");
- headarriba.style.width="96%";
- headarriba.style.transitionDuration="0.5s";
+//  headarriba.style.width="96%";
+//  headarriba.style.transitionDuration="0.5s";
 });
 
 
